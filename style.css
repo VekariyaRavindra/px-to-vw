@@ -40,3 +40,36 @@ input {
   padding: 10px;
   border-radius: 6px;
 }
+.info-section {
+  margin-top: 40px;
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.05);
+  line-height: 1.6;
+}
+
+.info-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.info-section p {
+  margin-bottom: 15px;
+}
+
+.info-section code {
+  background: #eef;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: monospace;
+}
+
+.info-section pre {
+  background: #f9f9f9;
+  padding: 10px;
+  overflow-x: auto;
+  border-left: 4px solid #8ac;
+  font-family: monospace;
+  margin: 15px 0;
+}
