@@ -11,38 +11,41 @@
 <body>
   <div class="container">
     <h1>PX to VW Converter</h1>
-
+  
     <label for="pxInput">Pixel Value (px):</label>
     <input type="number" id="pxInput" placeholder="e.g., 320">
-
+  
     <label for="baseInput">Base Width (default: 1920):</label>
     <input type="number" id="baseInput" placeholder="e.g., 1920" value="1920">
-
+  
     <div class="result">
-      <p>VW Output: <span id="vwOutput">0vw</span></p>
+      <p><strong>Absolute Size (px):</strong> <span id="displayPx">–</span></p>
+      <p><strong>Breakpoint (px):</strong> <span id="displayBase">1920</span></p>
+      <p><strong>VW Output:</strong> <span id="vwOutput">0vw</span></p>
     </div>
+  
     <div class="info-section">
-  <h2>Why Use PX to VW Conversion?</h2>
-  <p>
-    Creating a responsive webpage often means ensuring that text and elements scale properly across different screen sizes. For instance, if you want a heading to be <strong>50px</strong> at a breakpoint of <strong>2000px</strong>, and have it scale dynamically on smaller or larger viewports, you should consider using <code>vw</code> units.
-  </p>
-  <p>
-    The <code>vw</code> unit scales with the viewport width, unlike <code>px</code> which is fixed. To convert a pixel value to a <code>vw</code> value that scales properly, you can use this formula:
-  </p>
-  <pre><code>(px value / breakpoint) * 100</code></pre>
-  <p>
-    In the example above, converting <strong>50px</strong> at a <strong>2000px</strong> breakpoint would look like:
-  </p>
-  <pre><code>(50 / 2000) * 100 = 2.5vw</code></pre>
-  <p>
-    So instead of using <code>font-size: 50px;</code>, you can use <code>font-size: 2.5vw;</code> to make the text scale responsively.
-  </p>
-  <p>
-    This tool simplifies that calculation for you — no need to memorize formulas every time!
-  </p>
-</div>
-
+      <h2>Why Use PX to VW Conversion?</h2>
+      <p>
+        Creating a responsive webpage often means ensuring that text and elements scale properly across different screen sizes. For instance, if you want a heading to be <strong>50px</strong> at a breakpoint of <strong>2000px</strong>, and have it scale dynamically on smaller or larger viewports, you should consider using <code>vw</code> units.
+      </p>
+      <p>
+        The <code>vw</code> unit scales with the viewport width, unlike <code>px</code> which is fixed. To convert a pixel value to a <code>vw</code> value that scales properly, you can use this formula:
+      </p>
+      <pre><code>(px value / breakpoint) * 100</code></pre>
+      <p>
+        In the example above, converting <strong>50px</strong> at a <strong>2000px</strong> breakpoint would look like:
+      </p>
+      <pre><code>(50 / 2000) * 100 = 2.5vw</code></pre>
+      <p>
+        So instead of using <code>font-size: 50px;</code>, you can use <code>font-size: 2.5vw;</code> to make the text scale responsively.
+      </p>
+      <p>
+        This tool simplifies that calculation for you — no need to memorize formulas every time!
+      </p>
+    </div>
   </div>
+  
 
   <script src="script.js"></script>
 </body>
